@@ -13,6 +13,10 @@ vi:
   author: "Tac gia"
   date: "Ngay"
   comment_title: "Danh sach binh luan"
+  post_title: "Tieu de"
+  created_at: "Ngay tao"
+  action: "Hanh dong"
+
   time:
     formats:
       default: "%Y-%m-%d"

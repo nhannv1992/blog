@@ -32,7 +32,9 @@ en:
   author: "Author"
   date: "Date"
   comment_title: "Comments"
-
+  post_title: "Title"
+  created_at: "Created at"
+  action: "Action"
   time:
     formats:
       default: "%Y-%m-%d"
