@@ -1,0 +1,25 @@
+vi:
+  hello: "Chao dai ca"
+  dsa : "abc d"
+  var_string : "%{var1} da noi %{var2} cac ban"
+
+  posts: "Danh sach bai viet"
+  manage_posts : "Quan ly bai viet"
+  add_new_post: "Them bai viet moi"
+  update_post: "Cap nhat"
+  delete_post: "Xoa"
+  message: "Noi dung"
+  send: "Gui"
+  author: "Tac gia"
+  date: "Ngay"
+  comment_title: "Danh sach binh luan"
+  time:
+    formats:
+      default: "%Y-%m-%d"
+      short: "ngay %d, thang %m nam %Y"
+      long: "%B %d, %Y"
+
+  comment:
+    zezo: "Binh luan: chua co binh luan"
+    one: "Binh luan: 1 binh luan"
+    other: "Binh luan: %{count} binh luan"

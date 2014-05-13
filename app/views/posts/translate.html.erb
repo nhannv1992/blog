@@ -1,0 +1,8 @@
+<h1>Translate <%= @lang %></h1>
+Translate String: <%= flash[:notice] %>
+
+<%= t 'var_string', var1: "Nhan", var2: "Hello" %>
+
+<%= l Time.now, format: :short %>
+<br />
+<%= t 'comment', count: 2 %>

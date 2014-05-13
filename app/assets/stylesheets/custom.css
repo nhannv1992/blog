@@ -1,0 +1,48 @@
+.f-left {
+	float:left;
+}
+.f-right {
+	float:right;
+}
+.main-container {
+	padding-top:50px;
+}
+.box {
+	background:#f7f7f7;
+	padding:10px;
+}
+.box-warning {
+	background:#EDE2D3;
+}
+.box-error {
+	background:#FCF9F9;
+	border:1px solid #F9B1B1;
+}
+.message-box {
+	padding:10px;
+	margin-top:30px;
+}
+/*login form*/
+.login-form {
+	width:350px;
+	margin:30px auto;
+	border:1px solid #adadad;
+	background:#f9f9f9;
+	padding:20px;
+	border-radius:5px;
+}
+.form-field {
+	margin:15px 0;
+}
+#error_explanation {
+	background:#FCF9F9;
+	border:1px solid #F9B1B1;
+	margin-top:30px;
+	padding:5px;
+}
+#error_explanation h2 {
+	font-size:20px;
+}
+ .field_with_errors {
+ 	border:1px solid #F9B1B1;
+ }

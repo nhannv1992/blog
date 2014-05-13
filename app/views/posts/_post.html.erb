@@ -1,0 +1,9 @@
+<%= div_for post do %>
+  <h3><%= link_to post.title, post_path(post) %></h3>
+  <ul class="meta">
+    <li class="author">Author: <%= post.user.email  %></li>
+    <li class="comment">Comments: <%= post.comments.size  %></li>
+    <li class="date">Date: <%= post.created_at  %></li>
+  </ul>
+  <p><%= post.excerpt %><p>
+<% end %>

@@ -1,0 +1,4 @@
+pirate:
+  time:
+    formats:
+      short: "arrrround %d/%m/%Y : %H : %M : %s'ish"

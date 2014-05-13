@@ -1,0 +1,19 @@
+<%= form_for(@post, url: post_create_path, id:"new-post") do |f| %>
+	<div class="form-field">
+		<%= f.label :title, class: "label-class" %><br />
+		<%= f.text_field :title, autofocus: true , class:"form-control", required:'' %>
+	</div>
+
+	<div class="form-field">
+		<%= f.label :body, class: "label-class" %><br />
+		<%= f.text_area :body , class:"form-control", required:'' %>
+	</div>
+
+	<div class="form-field">
+		<%= f.label :excerpt, class: "label-class" %><br />
+		<%= f.text_area :excerpt , class:"form-control", required:'' %>
+	</div>
+	<div class="form-field">
+		<%= f.submit "Create New Post" %>
+	</div>
+<% end %>

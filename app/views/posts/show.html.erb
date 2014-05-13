@@ -1,0 +1,30 @@
+<h3><%= link_to @post.title, post_path(@post) %></h3>
+<ul class="meta">
+  <li class="author"><%= t('author') %>: <%= @post.user.email  %></li>
+  <li class="comment"><%= t('comment', count:@post.comments.size ) %></li>
+  <li class="date"><%= t('date') %>: <%= @post.created_at  %></li>
+</ul>
+<p><%= @post.body %><p>
+<div id="comment-list">
+  <h3><%= t("comment_title") %></h3>
+  <ul class="list">
+    <%= render @comments %>
+    <%= paginate @comments %>
+  </ul>
+</div>
+<div id="comment-form" data-userlogged="<%= (user_signed_in?) ? "true" : "false" %>">
+  <form id="comment-f">
+  <div class="form-group">
+    <input id="txtId" type="hidden" value="<%= (user_signed_in?) ? current_user.id : '' %>" />
+    <label for="txtEmail">Email: </label>
+    <input type="text" class="form-control" value="<%= (user_signed_in?) ? current_user.email : ''  %>" id="txtEmail" placeholder="Your email">
+  </div>
+  <div class="form-group">
+    <label for="txtMessage"><%= t('message') %>: </label>
+   <textarea required class="form-control" id="txtMessage"></textarea>
+  </div>
+
+  <button data-url="<%= post_comments_path(post_id:@post.id) %>" data-postid="<%= @post.id %>" id="btnSend"><%= t('send') %></button>
+  </form>
+
+</div>
